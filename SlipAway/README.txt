@@ -15,4 +15,6 @@ Lets Go
 
 15:09 Commented out the learn more - I might use it later
 
+15:36 Been trying to add a background img but its not working, tried it in HTML and CSS
+
 
