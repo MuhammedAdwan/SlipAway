@@ -31,6 +31,12 @@ I belive the website already look better now- Im pushing the changes to github a
 13:04 Updating the Navigation bar
 13:07 ERROR 404 on the about us page, and on the nav bar is showing home instead oh about us :s
 13:16 I found the error message, it was a space in AboutUs 
+13:19 Lets add the content of About us.
+14:15 the web pages are ready to go, now we need to go to and seed the data
+-----------------------------------------------------
+14:22 Added the class product.cs to the Models Directory and defined the getters & Setters for the required 6 attributes ProductId, Name, Description, Price, Category, ImageUrl, and CustomerReview
+
+
 
 
 
