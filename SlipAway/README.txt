@@ -18,10 +18,22 @@ Lets Go
 15:36 Been trying to add a background img but its not working, tried it in HTML and CSS
 
 -----------------------------------------------------
-						2023-10-11 01:10
-background image worked, but I changed it so the user can see the footer menu
+						2023-10-11
+01:10 Background image worked, but I changed it so the user can see the footer menu
 I belive the website already look better now- Im pushing the changes to github and will finish it tomorrow.
+
 -----------------------------------------------------
+
+12:50 cleaned the code, rebuild it and test it again. its working
+
+12:57 Added the about us page controller to HomeController.cs
+12:58 Adding the about us view under the home directory
+13:04 Updating the Navigation bar
+13:07 ERROR 404 on the about us page, and on the nav bar is showing home instead oh about us :s
+13:16 I found the error message, it was a space in AboutUs 
+
+
+
 
 
 
