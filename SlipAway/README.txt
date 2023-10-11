@@ -35,8 +35,22 @@ I belive the website already look better now- Im pushing the changes to github a
 14:15 the web pages are ready to go, now we need to go to and seed the data
 -----------------------------------------------------
 14:22 Added the class product.cs to the Models Directory and defined the getters & Setters for the required 6 attributes ProductId, Name, Description, Price, Category, ImageUrl, and CustomerReview
+14:26 Add NuGet Package using the following command Install-Package Microsoft.EntityFrameworkCore.SqlServer -Version 3.1.5
+14:46 Defined the product Context by creating the product model abd new class called it SlipAwaycontext
+14:48 Modifying the startup.cs with the necessary libraries using SlipAway.Data;  using Microsoft.EntityFrameworkCore;
+14:50 Adding the configuration services method to startup.cs services.AddDbContext<SlipAwayContext>(options =>
+    options.UseSqlServer(Configuration.GetConnectionString("SlipAwayContext")));
 
+14:59: added the connection to appsetting.json   "ConnectionStrings": {
+    "SlipAwayContext": "Server=(localdb)\\mssqllocaldb;Database=SlipAwayContext-1;Trusted_Connection=True;MultipleActiveResultSets=true"
+  }
 
+15:16 scaffolded the SlipAway Pages
+15:17 initiate the migration feature by entering the following commands Add-Migration InitialCreate
+Update-Database
+
+taking a break
+-----------------------------------------------------
 
 
 
