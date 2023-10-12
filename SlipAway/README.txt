@@ -71,6 +71,10 @@ _____________________________________________________
 /Views/Products/Controllers/HomeController.cs.cshtml
 /Views/Shared/Controllers/HomeController.cs.cshtml
 
+15:12 I need to change the layout again for the CRUD Pages  but its working, I edited and I deleted data from the database
+17:07 Added the Product page to my navigation bar
+18:12 Started adding the search feature to my website, just updated the index method inside the product controller. Spent 30 mins on an error with the db set. I typed context.SlipAway instead of context.Product :s
+
 
 
 

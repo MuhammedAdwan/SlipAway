@@ -20,9 +20,17 @@ namespace SlipAway.Controllers
         }
 
         // GET: Products
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString)
         {
-            return View(await _context.Product.ToListAsync());
+            var movies = from m in _context.Product
+                         select m;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                movies = movies.Where(s => s.Name.Contains(searchString));
+            }
+
+            return View(await movies.ToListAsync());
         }
 
         // GET: Products/Details/5
