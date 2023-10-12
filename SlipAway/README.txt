@@ -17,8 +17,8 @@ Lets Go
 
 15:36 Been trying to add a background img but its not working, tried it in HTML and CSS
 
------------------------------------------------------
-						2023-10-11
+_____________________________________________________
+                        2023-10-11
 01:10 Background image worked, but I changed it so the user can see the footer menu
 I belive the website already look better now- Im pushing the changes to github and will finish it tomorrow.
 
@@ -52,6 +52,7 @@ Update-Database
 taking a break
 -----------------------------------------------------
 
+20:01 editing the startup file with the dependency injection
 
 
 
