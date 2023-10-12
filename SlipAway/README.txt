@@ -33,7 +33,9 @@ I belive the website already look better now- Im pushing the changes to github a
 13:16 I found the error message, it was a space in AboutUs 
 13:19 Lets add the content of About us.
 14:15 the web pages are ready to go, now we need to go to and seed the data
+
 -----------------------------------------------------
+
 14:22 Added the class product.cs to the Models Directory and defined the getters & Setters for the required 6 attributes ProductId, Name, Description, Price, Category, ImageUrl, and CustomerReview
 14:26 Add NuGet Package using the following command Install-Package Microsoft.EntityFrameworkCore.SqlServer -Version 3.1.5
 14:46 Defined the product Context by creating the product model abd new class called it SlipAwaycontext
@@ -50,11 +52,16 @@ I belive the website already look better now- Im pushing the changes to github a
 Update-Database
 
 taking a break
+
 -----------------------------------------------------
 
 20:01 editing the startup file with the dependency injection
+11:30 Creating Seed Data model 
+12:00 still adding products and finding pictures i can use commercially :s
 
+_____________________________________________________
 
+                        2023-10-12
 
 
 
