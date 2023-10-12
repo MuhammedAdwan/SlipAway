@@ -22,15 +22,15 @@ namespace SlipAway.Controllers
         // GET: Products
         public async Task<IActionResult> Index(string searchString)
         {
-            var movies = from m in _context.Product
-                         select m;
+            var products = from p in _context.Product
+                           select p;
 
             if (!String.IsNullOrEmpty(searchString))
             {
-                movies = movies.Where(s => s.Name.Contains(searchString));
+                products = products.Where(s => s.Name.Contains(searchString));
             }
 
-            return View(await movies.ToListAsync());
+            return View(await products.ToListAsync());
         }
 
         // GET: Products/Details/5
