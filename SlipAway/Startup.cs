@@ -1,11 +1,12 @@
-using SlipAway.Data;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using SlipAway.Data;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using SlipAway.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -49,6 +50,15 @@ namespace SlipAway
             app.UseRouting();
 
             app.UseAuthorization();
+
+            using (var scope = app.ApplicationServices.CreateScope())
+            {
+                var services = scope.ServiceProvider;
+                var context = services.GetRequiredService<SlipAwayContext>();
+                context.Database.Migrate();
+                SeedData.Initialize(services);
+            }
+
 
             app.UseEndpoints(endpoints =>
             {

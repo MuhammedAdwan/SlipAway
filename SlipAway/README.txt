@@ -62,6 +62,15 @@ taking a break
 _____________________________________________________
 
                         2023-10-12
+14:15 Adding new seeds
+14:38 Finished seeding the data, and I got an unhandled exception occured - InvalidOperationException: The layout view 'Controllers/HomeController.cs' could not be located. The following locations were searched: /Views/Products/Controllers/HomeController.cs.cshtml /Views/Shared/Controllers/HomeController.cs.cshtml
+14:46 Forgot to change the layout from the homeController to _layout. Done and now its working 
+14:47 Experienced issues with startup.cs, the class can not access SeedData.cs Error CS0103 'SeedData' does not exist in the current context	SlipAway	Startup.cs	Line 58
+14:56 Found the issue, I forgot to add SlipAway.Models library in the top
+14:59 Product Page is working now but ofc Edit, Details and Delete buttons are not working, throw errors - InvalidOperationException: The layout view 'Controllers/HomeController.cs' could not be located. The following locations were searched:
+/Views/Products/Controllers/HomeController.cs.cshtml
+/Views/Shared/Controllers/HomeController.cs.cshtml
+
 
 
 
