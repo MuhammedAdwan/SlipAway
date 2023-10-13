@@ -80,6 +80,8 @@ _____________________________________________________
 20:05 Added HttpPost index method to Product Controllers.cs
 21:06 finished adding validation on the create page for security and stuff 
 21:07 now I need to play little bit with the CSS, I didnt like the look of the webpage
+10:29 finished up the last touches like comment the my codes and checking Spelling mistakes
+Now Iam going to publish it to Azure
 
 
 
