@@ -78,6 +78,9 @@ _____________________________________________________
 19:55 put back to string, I forgot i need to add the filtering text 
 20:00 Added the filtering text field, tried it out and its working properly :D Yuppppi
 20:05 Added HttpPost index method to Product Controllers.cs
+21:06 finished adding validation on the create page for security and stuff 
+21:07 now I need to play little bit with the CSS, I didnt like the look of the webpage
+
 
 
 
