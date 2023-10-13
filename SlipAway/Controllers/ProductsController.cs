@@ -33,6 +33,7 @@ namespace SlipAway.Controllers
             return View(await products.ToListAsync());
         }
 
+
         // GET: Products/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -156,6 +157,11 @@ namespace SlipAway.Controllers
         private bool ProductExists(int id)
         {
             return _context.Product.Any(e => e.ProductID == id);
+        }
+        [HttpPost]
+        public string Index(string searchString, bool notUsed)
+        {
+            return "From [HttpPost]Index: filter on " + searchString;
         }
     }
 }

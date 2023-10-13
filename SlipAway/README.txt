@@ -74,6 +74,10 @@ _____________________________________________________
 15:12 I need to change the layout again for the CRUD Pages  but its working, I edited and I deleted data from the database
 17:07 Added the Product page to my navigation bar
 18:12 Started adding the search feature to my website, just updated the index method inside the product controller. Spent 30 mins on an error with the db set. I typed context.SlipAway instead of context.Product :s
+19:53 updated the searching method to pass the name as route data in the URL segment
+19:55 put back to string, I forgot i need to add the filtering text 
+20:00 Added the filtering text field, tried it out and its working properly :D Yuppppi
+20:05 Added HttpPost index method to Product Controllers.cs
 
 
 
