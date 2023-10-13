@@ -50,7 +50,7 @@ namespace SlipAway
             app.UseRouting();
 
             app.UseAuthorization();
-
+            // adding the Seed Initializer
             using (var scope = app.ApplicationServices.CreateScope())
             {
                 var services = scope.ServiceProvider;

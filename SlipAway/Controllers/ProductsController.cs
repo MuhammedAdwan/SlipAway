@@ -21,15 +21,18 @@ namespace SlipAway.Controllers
 
         // GET: Products
         public async Task<IActionResult> Index(string searchString)
+            //retrieving the product and define the query
         {
             var products = from p in _context.Product
                            select p;
 
+            //This is to check if the search parameter is not null or empty.
             if (!String.IsNullOrEmpty(searchString))
             {
+               //filtering the results
                 products = products.Where(s => s.Name.Contains(searchString));
             }
-
+            //returning the results with matching name
             return View(await products.ToListAsync());
         }
 
@@ -158,6 +161,7 @@ namespace SlipAway.Controllers
         {
             return _context.Product.Any(e => e.ProductID == id);
         }
+       //Http Overload method
         [HttpPost]
         public string Index(string searchString, bool notUsed)
         {

@@ -22,7 +22,7 @@ namespace SlipAway.Models
                     return;
                 }
 
-                //to add new products to the db
+                //to seed new products to the db
                 context.Product.AddRange(
                      new Product
                      {

@@ -17,12 +17,12 @@ namespace SlipAway.Controllers
         {
             _logger = logger;
         }
-
+        //to pass the data from the controller to the index page
         public IActionResult Index()
         {
             return View();
         }
-
+        //to pass the data from the controller to the privacy page
         public IActionResult Privacy()
         {
             return View();
@@ -33,7 +33,7 @@ namespace SlipAway.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
-
+        //to pass the data from the controller to the AboutUs page
         public IActionResult AboutUs()
         {
             return View();
